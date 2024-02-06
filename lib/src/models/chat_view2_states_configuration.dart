@@ -22,7 +22,7 @@ class Chatview2StateConfiguration {
   final VoidCallBack? onReloadButtonTap;
 }
 
- class ChatView2StateWidgetConfiguration{
+class ChatView2StateWidgetConfiguration {
   const ChatView2StateWidgetConfiguration({
     this.widget,
     this.title,

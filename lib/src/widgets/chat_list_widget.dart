@@ -50,12 +50,13 @@ class ChatListWidget extends StatefulWidget {
     this.replyPopupConfig,
     this.loadMoreData,
     this.isLastPage,
-    this.onChatListTap, required this.local,
+    this.onChatListTap,
+    required this.local,
   }) : super(key: key);
 
   /// Provides controller for accessing few function for running chat.
   final ChatController chatController;
- final String local;
+  final String local;
 
   /// Provides configuration for background of chat.
   final ChatBackgroundConfiguration chatBackgroundConfig;

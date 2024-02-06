@@ -2,7 +2,7 @@
 
 # ChatView3
 
-[![chatview3](https://img.shields.io/pub/v/chatview3?label=chatview)](https://pub.dev/packages/chatview3)
+[![chatview3](https://img.shields.io/pub/v/chatview3?label=chatview3)](https://pub.dev/packages/chatview3)
 
 Another modified version of chatview package.
 That allows you to integrate Chat View with highly customization options such as one on one
