@@ -24,7 +24,7 @@ dependencies:
   chatview3: <latest-version>
 ```
 
-_Get the latest version in the 'Installing' tab on [pub.dev](https://pub.dev/packages/chatview2)_
+_Get the latest version in the 'Installing' tab on [pub.dev](https://pub.dev/packages/chatview3)_
 
 2.  Import the package
 
@@ -92,12 +92,12 @@ Note: you can evaluate message type from `messageType` parameter, based on that 
 
 ## Messages types compability
 
-|  Message Types  | Android | iOS | MacOS | Web | Linux | Windows |
-| :-------------: | :-----: | :-: | :---: | :-: | :---: | :-----: |
-|  Text messages  |   ✔️    | ✔️  |  ✔️   | ✔️  |  ✔️   |   ✔️    |
-| Image messages  |   ✔️    | ✔️  |  ✔️   | ✔️  |  ✔️   |   ✔️    |
-| Voice messages  |   ✔️    | ✔️  |  ❌   | ❌  |  ❌   |   ❌    |
-| Custom messages |   ✔️    | ✔️  |  ✔️   | ✔️  |  ✔️   |   ✔️    |
+|  Message Types  | Android | iOS |
+| :-------------: | :-----: | :-: |
+|  Text messages  |   ✔️    | ✔️  |
+| Image messages  |   ✔️    | ✔️  |
+| Voice messages  |   ✔️    | ✔️  |
+| Custom messages |   ✔️    | ✔️  |
 
 ## Platform specific configuration
 
@@ -539,12 +539,13 @@ void main() {
 
 Check out [blog](https://medium.com/simform-engineering/chatview-a-cutting-edge-chat-ui-solution-7367b1f9d772) for better understanding and basic implementation.
 
-Also, for whole example, check out the **example** app in the [example](https://github.com/SimformSolutionsPvtLtd/flutter_chatview/tree/main/example) directory or the 'Example' tab on pub.dartlang.org for a more complete example.
+Also, for whole example, check out the **example** app in the [example](https://github.com/bousalem98/chatview3/tree/main/example) directory or the 'Example' tab on pub.dartlang.org for a more complete example.
 
 ## Main Contributors
 
 <table>
   <tr>
+    <td align="center"><a href="https://github.com/bousalem98"><img src="https://avatars.githubusercontent.com/u/61710794?v=4" width="100px;" alt=""/><br /><sub><b>Mohamed Bousalem</b></sub></a></td>
     <td align="center"><a href="https://github.com/vatsaltanna"><img src="https://avatars.githubusercontent.com/u/25323183?s=100" width="100px;" alt=""/><br /><sub><b>Vatsal Tanna</b></sub></a></td>
     <td align="center"><a href="https://github.com/DhvanitVaghani"><img src="https://avatars.githubusercontent.com/u/64645989?v=4" width="100px;" alt=""/><br /><sub><b>Dhvanit Vaghani</b></sub></a></td>
     <td align="center"><a href="https://github.com/Ujas-Majithiya"><img src="https://avatars.githubusercontent.com/u/56400956?v=4" width="100px;" alt=""/><br /><sub><b>Ujas Majithiya</b></sub></a></td>
