@@ -4,9 +4,7 @@
 
 [![chatview3](https://img.shields.io/pub/v/chatview3?label=chatview3)](https://pub.dev/packages/chatview3)
 
-Another modified version of chatview package.
-That allows you to integrate Chat View with highly customization options such as one on one
-chat, group chat, message reactions, reply messages, link preview and configurations for overall view.
+Enhance your chat experience with this upgraded version of the ChatView package, now featuring multi-language support (arabic,english) and various improvements.Dive into seamless communication with enhanced language options and optimized features.
 
 For web demo
 visit [Chat View Example](https://chat-view-8f1b5.web.app/#/).
@@ -148,6 +146,42 @@ Note: you can evaluate message type from `messageType` parameter, based on that 
 ```
 
 ## Some more optional parameters
+
+0. Passing custom local (language) arabic or english
+
+```dart
+ChatView2(
+   ...
+     local:'ar' //if english 'en'
+
+  ...
+
+)
+```
+
+but you must modify your main file and add the intl package like this (for arabic language):
+
+```dart
+import 'package:intl/date_symbol_data_local.dart';
+void main() {
+  initializeDateFormatting("ar", null).then((_) {
+    runApp(const YourApp());
+  });
+}
+```
+
+and for english language:
+
+```dart
+import 'package:intl/date_symbol_data_local.dart';
+void main() {
+  initializeDateFormatting("en", null).then((_) {
+    runApp(const YourApp());
+  });
+}
+```
+
+!! this package supports only arabic and english
 
 1. Enable and disable specific features with `FeatureActiveConfig`.
 
@@ -501,40 +535,6 @@ ChatView2(
 )
 ```
 
-20. Passing custom local (language) arabic or english
-
-```dart
-ChatView2(
-   ...
-     local:'ar' //if english 'en'
-
-  ...
-
-)
-```
-
-but you must modify your main file and add the intl package like this (for arabic language):
-
-```dart
-import 'package:intl/date_symbol_data_local.dart';
-void main() {
-  initializeDateFormatting("ar", null).then((_) {
-    runApp(const YourApp());
-  });
-}
-```
-
-and for english language:
-
-```dart
-import 'package:intl/date_symbol_data_local.dart';
-void main() {
-  initializeDateFormatting("en", null).then((_) {
-    runApp(const YourApp());
-  });
-}
-```
-
 ## How to use
 
 Check out [blog](https://medium.com/simform-engineering/chatview-a-cutting-edge-chat-ui-solution-7367b1f9d772) for better understanding and basic implementation.
@@ -545,7 +545,7 @@ Also, for whole example, check out the **example** app in the [example](https://
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/bousalem98"><img src="https://avatars.githubusercontent.com/u/61710794?v=4" width="100px;" alt=""/><br /><sub><b>Mohamed Bousalem</b></sub></a></td>
+    <td align="center"><a href="https://github.com/bousalem98"><img src="https://avatars.githubusercontent.com/u/61710794?v=4" width="100px;" alt=""/><br /><sub><b>Mohamed Salem</b></sub></a></td>
     <td align="center"><a href="https://github.com/vatsaltanna"><img src="https://avatars.githubusercontent.com/u/25323183?s=100" width="100px;" alt=""/><br /><sub><b>Vatsal Tanna</b></sub></a></td>
     <td align="center"><a href="https://github.com/DhvanitVaghani"><img src="https://avatars.githubusercontent.com/u/64645989?v=4" width="100px;" alt=""/><br /><sub><b>Dhvanit Vaghani</b></sub></a></td>
     <td align="center"><a href="https://github.com/Ujas-Majithiya"><img src="https://avatars.githubusercontent.com/u/56400956?v=4" width="100px;" alt=""/><br /><sub><b>Ujas Majithiya</b></sub></a></td>

@@ -1,6 +1,6 @@
 name: chatview3
-description: "Another modified version of chatview package that allows you to integrate Chat View with highly customization options"
-version: 0.0.5
+description: "Enhance your chat experience with this upgraded version of the ChatView package, now featuring multi-language support (arabic,english) and various improvements."
+version: 0.0.6
 repository: https://github.com/bousalem98/chatview3
 
 environment:
