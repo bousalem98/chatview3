@@ -5,9 +5,26 @@ class Data {
       "https://raw.githubusercontent.com/SimformSolutionsPvtLtd/flutter_showcaseview/master/example/assets/simform.png";
   static final messageList = [
     Message(
+      id: '-1',
+      message: "https://miro.medium.com/max/1000/0*s7of7kWnf9fDg4XM.jpeg",
+      createdAt: DateTime(2024, 02, 05),
+      messageType: MessageType.image,
+      sendBy: '3',
+      reaction: Reaction(reactions: ['\u{2764}'], reactedUserIds: ['2']),
+      status: MessageStatus.read,
+    ),
+    Message(
+      id: '0',
+      createdAt: DateTime(2024, 02, 06),
+      message: "https://miro.medium.com/max/1000/0*s7of7kWnf9fDg4XM.jpeg",
+      messageType: MessageType.image,
+      sendBy: '2',
+      status: MessageStatus.read,
+    ),
+    Message(
       id: '1',
       message: "Hi!",
-      createdAt: DateTime(2024, 02, 05),
+      createdAt: DateTime(2024, 02, 07),
       sendBy: '1', // userId of who sends the message
       status: MessageStatus.read,
     ),
