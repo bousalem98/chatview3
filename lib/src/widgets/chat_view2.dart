@@ -30,7 +30,7 @@ import 'send_message_widget.dart';
 
 class ChatView2 extends StatefulWidget {
   const ChatView2({
-    Key? key,
+    super.key,
     required this.chatController,
     required this.currentUser,
     this.local = "en",
@@ -58,8 +58,7 @@ class ChatView2 extends StatefulWidget {
   })  : chatBackgroundConfig =
             chatBackgroundConfig ?? const ChatBackgroundConfiguration(),
         chatview2StateConfig =
-            chatview2StateConfig ?? const Chatview2StateConfiguration(),
-        super(key: key);
+            chatview2StateConfig ?? const Chatview2StateConfiguration();
 
   /// Provides configuration related to user profile circle avatar.
   final ProfileCircleConfiguration? profileCircleConfig;
@@ -235,7 +234,11 @@ class Chatview2State extends State<ChatView2>
                         return ChatListWidget(
                           // ignore: deprecated_member_use_from_same_package
                           showTypingIndicator: widget.showTypingIndicator,
-                          local: widget.local == "en" ? "en_US" : "ar_SA",
+                          local: widget.local == "en"
+                              ? "en_US"
+                              : widget.local == "ar"
+                                  ? "ar_SA"
+                                  : "fr_FR",
                           replyMessage: state,
                           chatController: widget.chatController,
                           chatBackgroundConfig: widget.chatBackgroundConfig,

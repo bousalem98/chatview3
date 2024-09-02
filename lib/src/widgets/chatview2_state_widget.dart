@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 class Chatview2StateWidget extends StatelessWidget {
   const Chatview2StateWidget({
-    Key? key,
+    super.key,
     this.chatview2StateWidgetConfig,
     required this.chatview2State,
     this.onReloadButtonTap,
-  }) : super(key: key);
+  });
 
   /// Provides configuration of chat view's different states such as text styles,
   /// widgets and etc.

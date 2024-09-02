@@ -31,7 +31,7 @@ import 'chat_group_header.dart';
 
 class ChatGroupedListWidget extends StatefulWidget {
   const ChatGroupedListWidget({
-    Key? key,
+    super.key,
     required this.showPopUp,
     required this.showTypingIndicator,
     required this.scrollController,
@@ -48,7 +48,7 @@ class ChatGroupedListWidget extends StatefulWidget {
     this.repliedMessageConfig,
     this.typeIndicatorConfig,
     required this.local,
-  }) : super(key: key);
+  });
 
   /// Allow user to swipe to see time while reaction pop is not open.
   final bool showPopUp;

@@ -24,12 +24,12 @@ import 'package:flutter/material.dart';
 
 class MessageTimeWidget extends StatelessWidget {
   const MessageTimeWidget({
-    Key? key,
+    super.key,
     required this.messageTime,
     required this.isCurrentUser,
     this.messageTimeTextStyle,
     this.messageTimeIconColor,
-  }) : super(key: key);
+  });
 
   /// Provides message crated date time.
   final DateTime messageTime;

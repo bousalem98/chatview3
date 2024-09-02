@@ -24,10 +24,10 @@ import 'package:chatview3/src/models/image_message.dart';
 
 class ShareIcon extends StatelessWidget {
   const ShareIcon({
-    Key? key,
+    super.key,
     this.shareIconConfig,
     required this.imageUrl,
-  }) : super(key: key);
+  });
 
   /// Provides configuration of share icon which is showed in image preview.
   final ShareIconConfiguration? shareIconConfig;

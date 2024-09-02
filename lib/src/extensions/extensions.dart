@@ -36,11 +36,15 @@ extension TimeDifference on DateTime {
     if (differenceInDays == 0) {
       return local.toLowerCase().contains("ar")
           ? "اليوم"
-          : PackageStrings.today;
+          : local.toLowerCase().contains("fr")
+              ? "Aujourd'hui"
+              : PackageStrings.today;
     } else if (differenceInDays <= 1 && differenceInDays >= -1) {
       return local.toLowerCase().contains("ar")
-          ? formatter.format(formattedDate)
-          : PackageStrings.yesterday;
+          ? "أمس"
+          : local.toLowerCase().contains("fr")
+              ? "Hier"
+              : PackageStrings.yesterday;
     } else {
       return formatter.format(formattedDate);
     }

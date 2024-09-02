@@ -28,7 +28,7 @@ import '../values/typedefs.dart';
 
 class ChatView2AppBar extends StatelessWidget {
   const ChatView2AppBar({
-    Key? key,
+    super.key,
     required this.chatTitle,
     this.backGroundColor,
     this.userStatus,
@@ -42,7 +42,7 @@ class ChatView2AppBar extends StatelessWidget {
     this.padding,
     this.leading,
     this.showLeading = true,
-  }) : super(key: key);
+  });
 
   /// Allow user to change colour of appbar.
   final Color? backGroundColor;

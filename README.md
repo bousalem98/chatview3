@@ -4,7 +4,7 @@
 
 [![chatview3](https://img.shields.io/pub/v/chatview3?label=chatview3)](https://pub.dev/packages/chatview3)
 
-Enhance your chat experience with this upgraded version of the ChatView package, now featuring multi-language support (arabic,english) and various improvements.Dive into seamless communication with enhanced language options and optimized features.
+Enhance your chat experience with this upgraded version of the ChatView package, now featuring multi-language support (arabic, frensh and english) and various improvements.Dive into seamless communication with enhanced language options and optimized features.
 
 For web demo
 visit [Chat View Example](https://chat-view-8f1b5.web.app/#/).
@@ -147,12 +147,12 @@ Note: you can evaluate message type from `messageType` parameter, based on that 
 
 ## Some more optional parameters
 
-0. Passing custom local (language) arabic or english
+0. Passing custom local (language) arabic or english or frensh
 
 ```dart
 ChatView2(
    ...
-     local:'ar' //if english 'en'
+     local:'ar' //if english 'en'  if frensh 'fr'
 
   ...
 
@@ -181,7 +181,18 @@ void main() {
 }
 ```
 
-!! this package supports only arabic and english
+and for frensh language:
+
+```dart
+import 'package:intl/date_symbol_data_local.dart';
+void main() {
+  initializeDateFormatting("fr", null).then((_) {
+    runApp(const YourApp());
+  });
+}
+```
+
+!! this package supports only arabic, english and frensh
 
 1. Enable and disable specific features with `FeatureActiveConfig`.
 

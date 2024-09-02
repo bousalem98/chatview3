@@ -23,11 +23,11 @@ import 'package:flutter/material.dart';
 
 class ReplyIcon extends StatelessWidget {
   const ReplyIcon({
-    Key? key,
+    super.key,
     required this.scaleAnimation,
     required this.slideAnimation,
     this.replyIconColor,
-  }) : super(key: key);
+  });
 
   /// Represents scale animation value of icon when user swipes for reply.
   final Animation<double> scaleAnimation;

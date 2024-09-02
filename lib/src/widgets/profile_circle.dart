@@ -25,14 +25,14 @@ import 'package:chatview3/src/utils/constants/constants.dart';
 
 class ProfileCircle extends StatelessWidget {
   const ProfileCircle({
-    Key? key,
+    super.key,
     required this.bottomPadding,
     this.imageUrl,
     this.profileCirclePadding,
     this.circleRadius,
     this.onTap,
     this.onLongPress,
-  }) : super(key: key);
+  });
 
   /// Allow users to give  default bottom padding according to user case.
   final double bottomPadding;

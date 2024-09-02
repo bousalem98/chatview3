@@ -28,10 +28,10 @@ import 'emoji_picker_widget.dart';
 
 class EmojiRow extends StatelessWidget {
   EmojiRow({
-    Key? key,
+    super.key,
     required this.onEmojiTap,
     this.emojiConfiguration,
-  }) : super(key: key);
+  });
 
   /// Provides callback when user taps on emoji in reaction pop-up.
   final StringCallback onEmojiTap;

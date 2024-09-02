@@ -29,12 +29,12 @@ import '../utils/constants/constants.dart';
 
 class TypingIndicator extends StatefulWidget {
   const TypingIndicator({
-    Key? key,
+    super.key,
     this.showIndicator = false,
     this.profilePic,
     this.chatBubbleConfig,
     this.typeIndicatorConfig,
-  }) : super(key: key);
+  });
 
   /// Allow user to turn on/off typing indicator.
   final bool showIndicator;
