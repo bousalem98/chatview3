@@ -347,12 +347,11 @@ class _ChatGroupedListWidgetState extends State<ChatGroupedListWidget>
 
 class _GroupSeparatorBuilder extends StatelessWidget {
   const _GroupSeparatorBuilder({
-    Key? key,
     required this.separator,
     this.groupSeparatorBuilder,
     this.defaultGroupSeparatorConfig,
     required this.local,
-  }) : super(key: key);
+  });
   final String separator, local;
   final StringWithReturnWidget? groupSeparatorBuilder;
   final DefaultGroupSeparatorConfiguration? defaultGroupSeparatorConfig;

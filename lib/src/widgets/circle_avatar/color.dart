@@ -5,7 +5,7 @@ import 'constant.dart';
 // generate random color
 randomColor() {
   return Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
-      .withOpacity(1.0);
+      .withValues(alpha: 1.0);
 }
 
 // fixed color based on first leter

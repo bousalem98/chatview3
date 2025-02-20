@@ -1,6 +1,6 @@
 name: chatview3
 description: "Enhance your chat experience with this upgraded version of the ChatView package, now featuring multi-language support (arabic,english) and various improvements."
-version: 0.0.8
+version: 0.1.0
 repository: https://github.com/bousalem98/chatview3
 
 environment:
@@ -14,7 +14,7 @@ dependencies:
   intl: ">=0.18.0 <2.0.0"
   flutter_linkify: ^6.0.0
   url_launcher: ^6.1.7
-  emoji_picker_flutter: ^2.2.0
+  emoji_picker_flutter: ">=2.2.0 <6.0.0"
   http: ^1.1.0
   html: ^0.15.1
   any_link_preview: ^3.0.0
