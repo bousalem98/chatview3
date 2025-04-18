@@ -1,6 +1,6 @@
 name: chatview3
 description: "Enhance your chat experience with this upgraded version of the ChatView package, now featuring multi-language support (arabic,english) and various improvements."
-version: 0.1.0
+version: 0.1.2
 repository: https://github.com/bousalem98/chatview3
 
 environment:
@@ -21,14 +21,14 @@ dependencies:
   progress_indicators: ^1.0.0
   image_picker: ">=0.8.9 <2.0.0"
   cached_network_image: ^3.3.1
-  audio_waveforms: ^1.0.1
+  audio_waveforms: ^1.2.0
   # For formatting time locale in message receipts
   timeago: ^3.4.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

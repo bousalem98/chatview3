@@ -1,3 +1,8 @@
+## 0.1.2
+- Upgrade version of audio wave forms 1.2.0
+
+## 0.1.1
+- Fix voice_message_view issue
 
 ## 0.1.0
 - Fix some issues
